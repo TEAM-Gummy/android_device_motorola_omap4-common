@@ -5,6 +5,7 @@ LOCAL_PATH:= $(call my-dir)
 OMAP4_CAMERA_HAL_USES:= ALL
 
 CAMERAHAL_CFLAGS += $(ANDROID_API_CFLAGS) -DANDROID_API_JB_OR_LATER
+CAMERAHAL_CFLAGS += -fno-strict-aliasing
 
 ifdef TI_CAMERAHAL_DEBUG_ENABLED
     # Enable CameraHAL debug logs
